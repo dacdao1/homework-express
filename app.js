@@ -76,7 +76,6 @@ app.post("/cluegame", function(req, res, next)
     {
         res.send('You guess the weapon correct but not the room or the suspect, try again!');
     }
-    // the else statement is use if the user didn't put in the correct variable
-    
+    //can a switch statement do the same as above if else statement?
 }
 );

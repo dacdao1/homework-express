@@ -72,15 +72,11 @@ app.post("/cluegame", function(req, res, next)
     {
         res.send('You guess the room correct but not the weapon or the suspect, try again!');
     }
-    else if (userRoom!==possibleRoom && userWeapon === possibleWeapon && userSuspect !== possibleSuspect)
+    else (userRoom!==possibleRoom && userWeapon === possibleWeapon && userSuspect !== possibleSuspect)
     {
         res.send('You guess the weapon correct but not the room or the suspect, try again!');
     }
     // the else statement is use if the user didn't put in the correct variable
-    else
-    {
-        res.send("Did you say something? Please give me your clues");
-    }
-    console.log(possibleRoom+possibleSuspect+possibleWeapon);
+    
 }
 );
